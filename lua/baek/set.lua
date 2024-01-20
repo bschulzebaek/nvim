@@ -3,7 +3,7 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 opt.guicursor = ""
-
+opt.termguicolors = true
 opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
@@ -12,7 +12,7 @@ opt.wrap = false
 
 opt.swapfile = false
 opt.backup = false
-opt.undodir = "~/.vim/undodir"
+opt.undodir = os.getenv("HOME") .. "~/.vim/undodir"
 opt.undofile = true
 
 opt.hlsearch = false
