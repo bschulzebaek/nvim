@@ -57,4 +57,5 @@ return require('packer').startup(function(use)
         use 'RishabhRD/popfix'
         use 'RishabhRD/nvim-cheat.sh'
 
+        use 'yegappan/mru'
 end)
