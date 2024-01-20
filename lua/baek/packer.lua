@@ -58,4 +58,13 @@ return require('packer').startup(function(use)
         use 'RishabhRD/nvim-cheat.sh'
 
         use 'yegappan/mru'
+
+        use({
+            'rebelot/terminal.nvim',
+            config = function()
+                require("terminal").setup({
+                    autoclose = false,
+                })
+            end
+        })
 end)

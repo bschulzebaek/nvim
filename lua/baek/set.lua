@@ -9,6 +9,7 @@ opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
+opt.switchbuf = "useopen"
 
 opt.swapfile = false
 opt.backup = false
