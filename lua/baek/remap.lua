@@ -17,3 +17,4 @@ keymap.set("x", "<leader>p", "\"_dP")
 keymap.set("n", "<C-j>", ":tabprevious<CR>")
 keymap.set("n", "<C-k>", ":tabnext<CR>")
 
+keymap.set("n", "<C-q>", ":qa<CR>")
