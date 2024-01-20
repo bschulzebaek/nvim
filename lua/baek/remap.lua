@@ -12,9 +12,12 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
-keymap.set("x", "<leader>p", "\"_dP")
-
 keymap.set("n", "<C-j>", ":tabprevious<CR>")
 keymap.set("n", "<C-k>", ":tabnext<CR>")
 
 keymap.set("n", "<C-q>", ":qa<CR>")
+
+
+keymap.set("n", "<C-s>", ":w<CR>")
+
+
