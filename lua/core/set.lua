@@ -1,3 +1,7 @@
+vim.g.mapleader = " "
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local opt = vim.opt
 
 opt.number = true
@@ -10,6 +14,7 @@ opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
 opt.switchbuf = "useopen"
+opt.syntax = "on"
 
 opt.swapfile = false
 opt.backup = false

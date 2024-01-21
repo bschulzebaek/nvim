@@ -24,7 +24,7 @@ keymap.set("n", "<C-b>", ":ls<CR>:b<Space>")
 keymap.set("n", "<C-q>", ":qa<CR>")
 
 -- Write current buffer
-keymap.set("n", "<C-s>", ":w<CR>")
+keymap.set("n", "<C-s>", ":w!<CR>")
 
 --
 -- Terminal navigation
