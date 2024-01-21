@@ -67,4 +67,13 @@ return require('packer').startup(function(use)
                 })
             end
         })
+
+        use 'github/copilot.vim'
+
+        use {
+            "aznhe21/actions-preview.nvim",
+            config = function()
+                vim.keymap.set({ "v", "n" }, "gf", require("actions-preview").code_actions)
+            end,
+        }
 end)
