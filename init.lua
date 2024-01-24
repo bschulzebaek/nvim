@@ -1,10 +1,10 @@
+require("core.set")
 require("core.bootstrap")
+require("core.plugins")
+require("core.remap")
 
-require("core")
-
-
-vim.api.nvim_create_autocmd("VimEnter", {
-  callback = function()
+--vim.api.nvim_create_autocmd("VimEnter", {
+  --callback = function()
   --  if vim.fn.argv(0) == "" then
         --local treeWin = vim.api.nvim.get_current_win()
 
@@ -14,7 +14,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
         --require("telescope.builtin").find_files()
    -- end
-  end,
-})
+  --end,
+--})
 
-vim.print(vim.fn.argv(0))
+--vim.print(vim.fn.argv(0))

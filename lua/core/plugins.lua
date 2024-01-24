@@ -28,14 +28,6 @@ require("lazy").setup({
     },
 
     {
-        "aznhe21/actions-preview.nvim",
-        config = function()
-            vim.keymap.set({ "v", "n" }, "gf", require("actions-preview").code_actions)
-        end,
-
-    },
-
-    {
         "iamcco/markdown-preview.nvim",
         run = "cd app && npm install",
         setup = function()
@@ -46,15 +38,6 @@ require("lazy").setup({
         ft = {
             "markdown"
         },
-    },
-
-    {
-        "rebelot/terminal.nvim",
-        config = function()
-            require("terminal").setup({
-                autoclose = false,
-            })
-        end
     },
 
     {
@@ -205,5 +188,15 @@ require("lazy").setup({
         branch = "harpoon2",
         requires = { {"nvim-lua/plenary.nvim"} }
     },
+
+    {
+        'rmagatti/auto-session',
+        config = function()
+            require("auto-session").setup {
+                log_level = "error",
+                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+            }
+        end
+    }
 
 })
