@@ -1,7 +1,11 @@
-require("core.set")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 require("core.bootstrap")
-require("core.plugins")
+require("core.set")
+require('plugin.setup')
 require("core.remap")
+
 
 --vim.api.nvim_create_autocmd("VimEnter", {
   --callback = function()
