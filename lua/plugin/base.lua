@@ -60,7 +60,8 @@ return {
     },
 
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
 
@@ -73,13 +74,10 @@ return {
     {
         'rmagatti/auto-session',
         config = function()
-            require("auto-session").setup {
+            require("auto-session").setup({
                 log_level = "error",
-                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
-            }
+            })
         end
     }
-
 }
-
 

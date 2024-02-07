@@ -31,18 +31,18 @@ return {
     },
 
     {
-        "zbirenbaum/copilot-cmp",
+        'zbirenbaum/copilot-cmp',
         config = function ()
-            require("copilot_cmp").setup()
+            require('copilot_cmp').setup()
         end
     },
 
     {
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
+        'zbirenbaum/copilot.lua',
+        cmd = 'Copilot',
+        event = 'InsertEnter',
         config = function()
-            require("copilot").setup({
+            require('copilot').setup({
                 suggestion = { enabled = false },
                 panel = { enabled = false },
             })
@@ -56,23 +56,23 @@ return {
 
     -- Markdown
     {
-        "iamcco/markdown-preview.nvim",
-        run = "cd app && npm install",
+        'iamcco/markdown-preview.nvim',
+        run = 'cd app && npm install',
         setup = function()
             vim.g.mkdp_filetypes = {
-                "markdown"
+                'markdown'
             }
         end,
         ft = {
-            "markdown"
+            'markdown'
         },
     },
 
     -- CSS
     {
-        "norcalli/nvim-colorizer.lua",
+        'norcalli/nvim-colorizer.lua',
         config = function()
-            require("colorizer").setup()
+            require('colorizer').setup()
         end
     },
 
