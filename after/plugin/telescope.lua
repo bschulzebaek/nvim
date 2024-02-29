@@ -7,7 +7,7 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = '[F]ind [B]uffers' }
 require('telescope').setup({
     pickers = {
         find_files = {
-            hidden = true,
+--            hidden = true,
         },
     },
 })

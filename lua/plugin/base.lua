@@ -78,6 +78,8 @@ return {
                 log_level = "error",
             })
         end
-    }
+    },
+
+    { 'tamton-aquib/keys.nvim' }
 }
 
