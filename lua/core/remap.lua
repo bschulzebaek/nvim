@@ -8,7 +8,8 @@ keymap.set("n", "J", "mzJ`z")
 keymap.set("n", "<C-d>", "<C-d>zz", { desc = 'Scroll down half page' })
 keymap.set("n", "<C-u>", "<C-u>zz", { desc = 'Scroll up half page' })
 
-keymap.set("n", "<C-b>", ":ls<CR>:b<Space>", { desc = 'List and select buffer' })
+-- Conflict with tmux default prefix key 
+--keymap.set("n", "<C-b>", ":ls<CR>:b<Space>", { desc = 'List and select buffer' })
 
 keymap.set("n", "<C-q>", ":qa<CR>", { desc = 'Quit all' })
 
