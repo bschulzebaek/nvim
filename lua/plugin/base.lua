@@ -68,6 +68,20 @@ return {
     },
 
     {
+        "NeogitOrg/neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "sindrets/diffview.nvim",
+            "nvim-telescope/telescope.nvim",
+        },
+        config = true,
+        init = function()
+            local neogit = require('neogit')
+            neogit.setup {}
+        end,
+    },
+
+    {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.5',
         dependencies = { {'nvim-lua/plenary.nvim'} }
