@@ -54,6 +54,17 @@ return {
         build = ':TSUpdate',
     },
 
+    -- Go
+    {
+        'ray-x/go.nvim',
+        config = function()
+            require('go').setup()
+        end,
+        event = {'CmdlineEnter'},
+        ft = {'go', 'gomod'},
+
+    },
+
     -- Markdown
     {
         'iamcco/markdown-preview.nvim',
