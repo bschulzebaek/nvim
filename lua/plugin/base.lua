@@ -45,6 +45,15 @@ return {
         },
     },
 
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        dependencies = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        },
+    },
+
     "nvim-lua/plenary.nvim",
     "yegappan/mru",
     "RishabhRD/popfix",
