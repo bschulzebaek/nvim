@@ -52,6 +52,7 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  gopls = {},
 }
 
 require('neodev').setup()
